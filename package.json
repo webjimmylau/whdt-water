@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start": "vite --mode development",
+    "beta": "vite build --mode beta",
+    "build": "vite build --mode production",
     "preview": "vite preview"
   },
   "dependencies": {
     "element-plus": "2.2.0",
-    "vue": "^3.2.41"
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",
