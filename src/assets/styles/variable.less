@@ -1,0 +1,38 @@
+@colorRed: #f45;
+@colorGreen: #46bd87;
+@colorBlue: #409eff; // old: #09f
+@colorYellow: #ff0;
+@colorOrange: #f63;
+@colorBlack: #000; // old: #000
+@colorGrayDeep: #333;
+@colorGray: #666;
+@colorGrayLight: #999;
+@colorGrayC: #ccc;
+@colorGrayD: #ddd;
+@colorGrayE: #eee;
+@colorGrayF: #f0f2f5; // old: #f8f8f8
+@colorWhite: #fff;
+
+@colorBlueLight: #eff8ff;
+@colorBlackDefault: #4b4848;
+
+@border: 1px solid @colorGrayD;
+@navWidth: 140px;
+
+// 滚动条
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background: @colorGrayF; // 设置 滚动区域背景
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1); // 设置 滚动颜色
+  }
+  // &::-webkit-scrollbar-track {
+  //   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.04); // 设置 左侧边框
+  // }
+  // &::-webkit-scrollbar-thumb:window-inactive {
+  //   background: rgba(0, 0, 0, 0.1); // 设置 滚动颜色 与上面重复
+  // }
+}
