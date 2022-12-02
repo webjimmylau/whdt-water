@@ -21,6 +21,32 @@ let selectOptions = [
     value: '4'
   }
 ]
+let treeSelectValue = ref('3-1')
+let treeSelectOptions = [
+  {
+    label: 'Option1',
+    value: '1'
+  },
+  {
+    label: 'Option2',
+    value: '2'
+  },
+  {
+    label: 'Option3',
+    value: '3',
+    children: [
+      {
+        label: 'Option3-1',
+        value: '3-1'
+      }
+    ]
+  },
+  {
+    label: 'Option4',
+    value: '4'
+  }
+]
+
 let toggle = (val) => {
   console.log(val)
 }
@@ -47,6 +73,10 @@ let toggle = (val) => {
       </el-select>
     </div>
     <div class="m-t-8 l-h-2">{{ selectValue }}</div>
+    <div>
+      <el-tree-select v-model="treeSelectValue" :data="treeSelectOptions" />
+    </div>
+    <div class="m-t-8 l-h-2">{{ treeSelectValue }}</div>
   </div>
 </template>
 
