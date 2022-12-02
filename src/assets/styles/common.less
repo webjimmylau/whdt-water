@@ -733,86 +733,14 @@
   border: none;
 }
 
-// .el-cascader {
-//   &.el-cascader--small {
-//     .el-cascader__search-input {
-//       height: 20px;
-//     }
-//     .el-cascader__tags .el-tag {
-//       // margin: 0;
-//       max-width: 60px;
-//     }
-//     .el-input__inner {
-//       height: 24px !important;
-//     }
-//   }
-// }
-
-// .el-cascader-panel {
-//   .el-cascader-node {
-//     height: 24px;
-//     line-height: 24px;
-//     font-size: 12px;
-//   }
-// }
-
 .el-tree-select__popper {
   .el-tree {
     width: auto !important;
   }
 }
 
-.el-tree__empty-text {
-  font-size: 12px;
-}
-
-/* Module vxe-table vxe-grid
--------------------------------------------------- */
-.vxe-input.size--mini {
-  height: 24px;
-  line-height: 24px;
-}
-
-.vxe-select-option--wrapper {
-  .scroll-bar();
-}
-
-.vxe-cell .vxe-input > .vxe-input--inner,
-.vxe-cell .vxe-textarea > .vxe-textarea--inner,
-.vxe-table--filter-wrapper .vxe-input > .vxe-input--inner,
-.vxe-table--filter-wrapper .vxe-textarea > .vxe-textarea--inner {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.vxe-select--panel.is--transfer {
-  z-index: 9999 !important; // 下拉为兼容滚动条，设置在body，然后被弹窗遮挡
-}
-
-/* Module table
--------------------------------------------------- */
-.table-action {
-  & > * ~ * {
-    margin-left: 8px;
-  }
-}
-
-.popup-table-height {
-  height: 306px;
-}
-
-.popup-tree-bottom {
-  margin-bottom: 36px;
-}
-
 /* Module others
 -------------------------------------------------- */
-.table-info-title {
-  padding: 8px;
-  margin-bottom: 8px;
-  line-height: 1.5;
-  background: @colorGrayF;
-}
 
 .prompt {
   padding: 8px;
@@ -822,23 +750,8 @@
   background: @colorGrayF;
 }
 
-.order-tag-box {
-  height: 29px;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
-  border-bottom: @border;
-}
-
 textarea {
   .scroll-bar();
-}
-
-/* Module hyperlinks
--------------------------------------------------- */
-.hyperlinks {
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 12px;
 }
 
 /* Module ellipsis
