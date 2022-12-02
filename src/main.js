@@ -10,6 +10,7 @@ import api from '@/api/index'
 import ElementPlus from 'element-plus'
 import zhCn from 'element-plus/es/locale/lang/zh-cn'
 
+import 'element-plus/theme-chalk/dark/css-vars.css'
 import '@/assets/styles/base.css'
 import '@/assets/styles/common.less'
 
